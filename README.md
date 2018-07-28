@@ -2,7 +2,7 @@
 
 For more than 20 years I have dreamed of writing a calculus text entitled _O Calculus_... 
 
--- Donald Knuth
+-- _Donald Knuth_, "Teach Calculus with Big _O_, [NOTICES OF THE AMS, June/July 1998, p. 687-688](https://www.ams.org/notices/199806/commentary.pdf).   
 
 
 So you've searched for "O Calculus"; excited to see what has come out of Donald Knuth's Proposal... and here you are.  Nothing has come out.. yet.  But maybe the Open Source Community can do something about that?  
@@ -12,10 +12,19 @@ So you've searched for "O Calculus"; excited to see what has come out of Donald 
 
 If you have the skills and tiome to start developing the book, please let's start.  
 
-If you don't have the skills / time at hand, consider starring this repo, and please post "+1" on issue 1: How many like Knuth's proposal?  Maybe we reach a critical mass of people who will get the ball going? Maybe this goes viral?  Who knows?  I henceforth create this repo as a message on a bottle, hoping it will reach _you_, the person who, like me, think something like _O Calculus_ must exist.
+If you don't have the skills / time at hand, consider starring this repo, and please post "+1" on [issue 1](https://github.com/Alex-Linhares/Knuths-O-Calculus/issues): How many like Knuth's proposal?  Maybe we reach a critical mass of people who will get the ball going? Maybe this goes viral?  Who knows?  I henceforth create this repo as a message on a bottle, hoping it will reach _you_, the person who, like me, think something like _O Calculus_ must exist.
 
 
-# Donald Knuth's Proposal 
+Donald Knuth's Proposal 
+---
+
+* in [NOTICES OF THE AMS, June/July 1998, p. 687-688](https://www.ams.org/notices/199806/commentary.pdf)
+* in [Knuth's page](https://www-cs-faculty.stanford.edu/~knuth/calc)
+* being [discussed on the web](https://micromath.wordpress.com/2008/04/14/donald-knuth-calculus-via-o-notation/)
+
+
+and below (LaTeX to be fixed)
+
 
 Professor Anthony W. Knapp
 
@@ -42,7 +51,7 @@ with quantities that are only partly specified, and to use them in the
 midst of formulas.
 
 I would begin my ideal calculus course by introducing a simpler
-$$ '$A$ notation,'  which means '_absolutely at most_.'  For example,
+'$A$ notation,'  which means '_absolutely at most_.'  For example,
 $A(2)$ stands for a quantity whose absolute value is less than or equal
 to 2.  This notation has a natural connection with decimal numbers:  Saying
 that $\pi$ is approximately 3.14 is equivalent to saying that 
@@ -121,16 +130,18 @@ $$\eqalign{f(x+\epsilon)-f(x)&=\int_0^{\epsilon}f'(x+t)\,dt\cr
 I'm sure it would be a pleasure for both students and teacher if calculus
 were taught in this way.  The extra time needed to introduce $O$~notation
 is amply repaid by the simplifications that occur later.  In fact, there
-probably will be time to introduce the ``$o$~notation,'' which is
+probably will be time to introduce the '$o$~notation,' which is
 equivalent to the taking of limits, and to give the general definition 
 of a not-necessarily-strong derivative:
 $$f(x+\epsilon)=f(x)+f'(x)\epsilon+o(\epsilon)\,.$$
 The function $f$ is continuous at $x$ if
 $$f(x+\epsilon)=f(x)+o(1)\,;$$
+
+
 and so on.  But I would not mind leaving a full exploration of such things 
 to a more advanced course, when it will easily be picked up by anyone who
 has learned the basics with~$O$ alone.  Indeed, I~have not needed to use
-``$o$'' in 2200 pages of {\sl The Art of Computer Programming}, although
+'$o$' in 2200 pages of {\sl The Art of Computer Programming}, although
 many techniques of advanced calculus are applied throughout those books to
 a great variety of problems.
 
@@ -152,20 +163,15 @@ calculus texts for the new millennium.  And I~hope that some of these
 now-classical ideas will prove to be at least half as fruitful for 
 students of the next generation as they have been for me.
 
-\adx 150pt:
-Sincerely,\cr
-Donald E. Knuth\cr
-Professor\cr
 
-\adx0pt:
-DEK/pw\cr
+Sincerely,
+Donald E. Knuth
+Professor
 
-\medskip
 
-\disleft 20pt:[1]:
-N. G. de Bruijn, {\sl Asymptotic Methods in Analysis\/} (Amsterdam:
+DEK
+
+[1]: N. G. de Bruijn, {\sl Asymptotic Methods in Analysis\/} (Amsterdam:
 North-Holland, 1958).
-\smallskip
-\disleft 20pt:[2]:
-R. L. Graham, D. E. Knuth, and O. Patashnik, {\sl Concrete Mathematics\/}
+[2]: R. L. Graham, D. E. Knuth, and O. Patashnik, {\sl Concrete Mathematics\/}
 (Reading, Mass.: Addison\kern.1em--Wesley, 1989).
