@@ -1,4 +1,4 @@
-# Knuth's O Calculus
+#  Knuth's O Calculus
 
 For more than 20 years I have dreamed of writing a calculus text entitled _O Calculus_... 
 
@@ -42,16 +42,20 @@ with quantities that are only partly specified, and to use them in the
 midst of formulas.
 
 I would begin my ideal calculus course by introducing a simpler
-``$A$~notation,'' which means ``absolutely at most.''  For example,
-$A(2)$~stands for a quantity whose absolute value is less than or equal
-to~2.  This notation has a natural connection with decimal numbers:  Saying
+$$ '$A$ notation,'  which means '_absolutely at most_.'  For example,
+$A(2)$ stands for a quantity whose absolute value is less than or equal
+to 2.  This notation has a natural connection with decimal numbers:  Saying
 that $\pi$ is approximately 3.14 is equivalent to saying that 
 $\pi=3.14+A(.005)$.  Students will easily discover how to calculate
-with~$A$: 
+with $A$: 
+
+
 $$\eqalign{&10^{A(2)}=A(100)\,;\cr
 &\bigl(3.14+A(.005)\bigr)\bigl(1+A(0.01)\bigr)\cr
 &\quad=3.14+A(.005)+A(0.0314)+A(.00005)\cr
 &\quad=3.14+A(0.3645)=3.14+A(.04)\,.\cr}$$
+
+
 I would of course explain that the equality sign is not symmetric with
 respect to such notations; we have $3=A(5)$ and $4=A(5)$ but not
 $3=4$, nor can we say that $A(5)=4$.  We can, however, say that $A(0)=0$.
