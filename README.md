@@ -2,7 +2,7 @@
 
 For more than 20 years I have dreamed of writing a calculus text entitled _O Calculus_... 
 
--- _Donald Knuth_, "Teach Calculus with Big _O_, [NOTICES OF THE AMS, June/July 1998, p. 687-688](https://www.ams.org/notices/199806/commentary.pdf).   
+-- _Donald Knuth_, "Teach Calculus with Big _O_", [Notices of the AMS, June/July 1998, p. 687-688](https://www.ams.org/notices/199806/commentary.pdf).   
 
 
 So you've searched for "O Calculus"; excited to see what has come out of Donald Knuth's Proposal... and here you are.  Nothing has come out.. yet.  But maybe the Open Source Community can do something about that?  
