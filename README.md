@@ -26,6 +26,6 @@ Donald Knuth's Proposal
     [in 2011](https://texnicalstuff.blogspot.com/2011/05/big-o-notation-for-calculus.html)
     
     
-[](p1.png)
-[](p2.png)
-[](p3.png)
+[p1](p1.png)
+[p2](p2.png)
+[p3](p3.png)
