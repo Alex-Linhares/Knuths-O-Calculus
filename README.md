@@ -19,5 +19,5 @@ Donald Knuth's Proposal
 ---
 
 * in [NOTICES OF THE AMS, June/July 1998, p. 687-688](https://www.ams.org/notices/199806/commentary.pdf)
-* in [Knuth's page](https://www-cs-faculty.stanford.edu/~knuth/calc)
+* [Full text](/big-Oh-Calculus.pdf) from in [Knuth's page](https://www-cs-faculty.stanford.edu/~knuth/calc)
 * being [discussed on the web](https://micromath.wordpress.com/2008/04/14/donald-knuth-calculus-via-o-notation/)
