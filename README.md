@@ -15,9 +15,9 @@ If you have the skills and time to start developing the book, please let's get t
 If you don't have the skills / time at hand, consider starring this repo, and please post "+1" on [issue 1](https://github.com/Alex-Linhares/Knuths-O-Calculus/issues): How many like Knuth's proposal?  Maybe we reach a critical mass of people who will get the ball going? Maybe this goes viral?  Who knows?  I henceforth create this repo as a message on a bottle, hoping it will reach _you_, the person who, like me, think something like _O Calculus_ must exist.
 
 
-Donald Knuth's Proposal
----
 
+---
+# Donald Knuth's Proposal
 
     
 ![p1](p1.png)  
