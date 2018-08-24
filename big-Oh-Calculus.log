@@ -1,0 +1,33 @@
+This is TeX, Version 3.14159265 (TeX Live 2018) (preloaded format=tex 2018.8.22)  24 AUG 2018 15:14
+**big-Oh-Calculus.tex
+(./big-Oh-Calculus.tex
+Underfull \vbox (badness 1762) has occurred while \output is active
+\vbox(587.39885+1.94444)x428.99947, glue set 2.60541
+.\glue(\topskip) 3.05556
+.\hbox(6.94444+1.94444)x130.30583
+..\glue(\tabskip) 0.0
+..\hbox(6.94444+1.94444)x130.30583
+...\glue 0.0
+...\tenrm P
+...\tenrm r
+...\tenrm o
+...\tenrm f
+...etc.
+..\glue(\tabskip) 0.0
+.\glue(\baselineskip) 3.22224
+.\hbox(6.83331+0.0)x130.30583
+..\glue(\tabskip) 0.0
+..\hbox(6.83331+0.0)x130.30583, glue set 73.63904fill
+...\glue 0.0
+...\tenrm P
+...\glue 3.33333 plus 1.66498 minus 1.11221
+...\tenrm O
+...\glue 3.33333 plus 1.66498 minus 1.11221
+...etc.
+..\glue(\tabskip) 0.0
+.\glue(\baselineskip) 5.05556
+.etc.
+
+ [1]
+[2] [3] )
+Output written on big-Oh-Calculus.dvi (3 pages, 11168 bytes).

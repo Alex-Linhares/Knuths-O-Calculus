@@ -1,179 +1,23 @@
-#  Knuth's O Calculus
+#  Knuth's big _O_ Calculus
 
-For more than 20 years I have dreamed of writing a calculus text entitled _O Calculus_... 
+For more than 20 years I have dreamed of writing a calculus text entitled _O Calculus_...
 
 -- _Donald Knuth_, "Teach Calculus with Big _O_", [Notices of the AMS, June/July 1998, p. 687-688](https://www.ams.org/notices/199806/commentary.pdf).   
 
 
 So you've searched for "O Calculus"; excited to see what has come out of Donald Knuth's Proposal... and here you are.  Nothing has come out.. yet.  But maybe the Open Source Community can do something about that?  
 
-
+---
 # How to contribute
 
-If you have the skills and time to start developing the book, please let's start.  
+If you have the skills and time to start developing the book, please let's get together and start.  
 
 If you don't have the skills / time at hand, consider starring this repo, and please post "+1" on [issue 1](https://github.com/Alex-Linhares/Knuths-O-Calculus/issues): How many like Knuth's proposal?  Maybe we reach a critical mass of people who will get the ball going? Maybe this goes viral?  Who knows?  I henceforth create this repo as a message on a bottle, hoping it will reach _you_, the person who, like me, think something like _O Calculus_ must exist.
 
 
-Donald Knuth's Proposal 
+Donald Knuth's Proposal
 ---
 
 * in [NOTICES OF THE AMS, June/July 1998, p. 687-688](https://www.ams.org/notices/199806/commentary.pdf)
 * in [Knuth's page](https://www-cs-faculty.stanford.edu/~knuth/calc)
 * being [discussed on the web](https://micromath.wordpress.com/2008/04/14/donald-knuth-calculus-via-o-notation/)
-
-
-and below (LaTeX to be fixed)
-
-
-Professor Anthony W. Knapp
-
-PO Box 333
-East Setauket, NY 11733
-
-Dear editor,
-
-I am pleased to see so much serious attention being given to improvements
-in the way calculus has traditionally been taught, but I'm surprised that
-nobody has been discussing the kinds of changes that I personally believe
-would be most valuable.  If I were responsible for teaching calculus to
-college undergraduates and advanced high school students today, and if
-I had the opportunity to deviate from the existing textbooks, I would
-certainly make major changes by emphasizing several notational improvements
-that advanced mathematicians have been using for more than a hundred years.
-
-The most important of these changes would be to introduce the $O$ notation
-and related ideas at an early stage.  This notation, first used by Bachmann
-in 1894 and later popularized by Landau, has the great virtue that it makes
-calculations simpler, so it simplifies many parts of the subject, yet it is
-highly intuitive and easily learned.  The key idea is to be able to deal
-with quantities that are only partly specified, and to use them in the
-midst of formulas.
-
-I would begin my ideal calculus course by introducing a simpler
-'$A$ notation,'  which means '_absolutely at most_.'  For example,
-$A(2)$ stands for a quantity whose absolute value is less than or equal
-to 2.  This notation has a natural connection with decimal numbers:  Saying
-that $\pi$ is approximately 3.14 is equivalent to saying that 
-$\pi=3.14+A(.005)$.  Students will easily discover how to calculate
-with $A$: 
-
-
-$$\eqalign{&10^{A(2)}=A(100)\,;\cr
-&\bigl(3.14+A(.005)\bigr)\bigl(1+A(0.01)\bigr)\cr
-&\quad=3.14+A(.005)+A(0.0314)+A(.00005)\cr
-&\quad=3.14+A(0.3645)=3.14+A(.04)\,.\cr}$$
-
-
-I would of course explain that the equality sign is not symmetric with
-respect to such notations; we have $3=A(5)$ and $4=A(5)$ but not
-$3=4$, nor can we say that $A(5)=4$.  We can, however, say that $A(0)=0$.
-As de~Bruijn points out in [1,~\S 1.2], mathematicians customarily use 
-the $=$~sign as they use the word ``is'' in English: Aristotle is a man,
-but a man isn't necessarily Aristotle.  
-
-The $A$ notation applies to variable quantities as well as to constant
-ones.  For example,
-$$\vcenter{\halign{\hfil$#\;$&$#$\hfil\quad&#\hfil\cr
-\sin x&=A(1)\,;\cr
-x&=A(x)\,;\cr
-A(x)&=xA(1)\,;\cr
-A(x)+A(y)&=A(x+y)&if $x\geq 0$ and $y\geq 0\,;$\cr
-\bigl(1+A(t)\bigr){}^2&=1+3A(t)&if $t=A(1)\,.$\cr}}$$
-
-Once students have caught on to the idea of $A$~notation, they are ready
-for $O$~notation, which is even less specific.  In its simplest form, 
-$O(x)$ stands for something that is $CA(x)$ for some constant~$C$, but we
-don't say what $C$~is.  We also define side conditions on the variables
-that appear in the formulas.  For example, if $n$ is a positive integer we can
-say that any quadratic polynomial in $n$ is $O(n^2)$.  If $n$ is sufficiently
-large, we can deduce that 
-$$\eqalign{&\bigl(n+O(\sqrt{n}\,)\bigr)\bigl(\ln n+\gamma+O(1/n)\bigr)\cr
-&\quad=n\ln n+\gamma n+O(1)\cr
-&\qquad\null+O(\sqrt{n}\ln n)+O(\sqrt{n}\,)+O(1/\sqrt{n}\,)\cr
-&\quad=n\ln n+\gamma n+O(\sqrt{n}\ln n)\,.\cr}$$
-
-I would define the derivative by first defining what might be called a
-``strong derivative'':  The function~$f$ has a strong derivative $f'(x)$ at
-point~$x$ if
-$$f(x+\epsilon)=f(x)+f'(x)\epsilon+O(\epsilon^2)$$
-whenever $\epsilon$ is sufficiently small.  The vast majority of all functions
-that arise in practical work have strong derivatives, so I~believe this
-definition best captures the intuition I~want students to have about
-derivatives.  We see immediately, for example, that if $f(x)=x^2$ we have
-$$(x+\epsilon)^2=x^2+2x\epsilon+\epsilon^2\,,$$
-so the derivative of $x^2$ is $2x$.  And if the derivative of $x^n$ is
-$d_n(x)$, we have
-$$\eqalign{(x+\epsilon)^{n+1}&=(x+\epsilon)\bigl(x^n+d_n(x)\epsilon%
-+O(\epsilon^2)\bigr)\cr
-&=x^{n+1}+\bigl(xd_n(x)+x^n\bigr)\epsilon+O(\epsilon^2)\,;\cr}$$
-hence the derivative of $x^{n+1}$ is $xd_n(x)+x^n$ and we find by induction
-that $d_n(x)=nx^{n-1}$.  Similarly if $f$ and~$g$ have strong derivatives
-$f'(x)$ and $g'(x)$, we readily find 
-$$f(x+\epsilon)g(x+\epsilon)=f(x)g(x)+\bigl(f'(x)g(x)+f(x)g'(x)\bigr)\epsilon
-+O(\epsilon^2)$$
-and this gives the strong derivative of the product.  The chain rule
-$$f\bigl(g(x+\epsilon)\bigr)=f\bigl(g(x)\bigr)+f'\bigl(g(x)\bigr)g'(x)\epsilon
-+O(\epsilon^2)$$
-also follows when $f$ has a strong derivative at point $g(x)$ and $g$ has a
-strong derivative at~$x$.
-
-Once it is known that integration is the inverse of differentiation and
-related to the area under a curve, we can observe, for example, that if $f$
-and~$f'$ both have strong derivatives at~$x$, then
-$$\eqalign{f(x+\epsilon)-f(x)&=\int_0^{\epsilon}f'(x+t)\,dt\cr
-\noalign{\smallskip}
-&=\int_0^{\epsilon}\bigl(f'(x)+f''(x)\,t+O(t^2)\bigr)\,dt\cr
-\noalign{\smallskip}
-&=f'(x)\epsilon+f''(x)\epsilon^2\!/2+O(\epsilon^3)\,.\cr}$$
-
-I'm sure it would be a pleasure for both students and teacher if calculus
-were taught in this way.  The extra time needed to introduce $O$~notation
-is amply repaid by the simplifications that occur later.  In fact, there
-probably will be time to introduce the '$o$~notation,' which is
-equivalent to the taking of limits, and to give the general definition 
-of a not-necessarily-strong derivative:
-$$f(x+\epsilon)=f(x)+f'(x)\epsilon+o(\epsilon)\,.$$
-The function $f$ is continuous at $x$ if
-$$f(x+\epsilon)=f(x)+o(1)\,;$$
-
-
-and so on.  But I would not mind leaving a full exploration of such things 
-to a more advanced course, when it will easily be picked up by anyone who
-has learned the basics with~$O$ alone.  Indeed, I~have not needed to use
-'$o$' in 2200 pages of {\sl The Art of Computer Programming}, although
-many techniques of advanced calculus are applied throughout those books to
-a great variety of problems.
-
-Students will be motivated to use $O$ notation for two important
-reasons. First, it significantly simplifies calculations because it allows
-us to be sloppy---but in a satisfactorily controlled way.  Second, it
-appears in the power series calculations of symbolic algebra systems like
-{\sl Maple\/} and {\sl Mathematica}, which today's students will surely be
-using.
-
-For more than 20 years I have dreamed of writing a calculus text entitled
-{\sl O Calculus}, in which the subject would be taught along the lines
-sketched above.  More pressing projects, such as the development of the
-\TeX\ system, have made that impossible, although I~did try to write a good
-introduction to $O$~notation for post-calculus students in [2,~Chapter~9].
-Perhaps my ideas are preposterous, but I'm hoping that this letter will
-catch the attention of people who are much more capable than~I of writing
-calculus texts for the new millennium.  And I~hope that some of these 
-now-classical ideas will prove to be at least half as fruitful for 
-students of the next generation as they have been for me.
-
-
-Sincerely,
-Donald E. Knuth
-Professor
-
-
-DEK
-
-[1]: N. G. de Bruijn, {\sl Asymptotic Methods in Analysis\/} (Amsterdam:
-North-Holland, 1958).
-
-
-[2]: R. L. Graham, D. E. Knuth, and O. Patashnik, {\sl Concrete Mathematics\/}
-(Reading, Mass.: Addison\kern.1em--Wesley, 1989).
